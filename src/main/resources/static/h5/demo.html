@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>demo</title>
-    <link href="http://test.mystaticdomain.com/css/bootstrap.min.css?v=3.3.6" rel="stylesheet"/>
-    <script type="text/javascript" src="http://test.mystaticdomain.com/js/vue-2.5.17.js"></script>
-    <script type="text/javascript" src="http://test.mystaticdomain.com/js/jquery.min.js"></script>
+    <link href="https://test.mystaticdomain.com/css/bootstrap.min.css?v=3.3.6" rel="stylesheet"/>
+    <script type="text/javascript" src="https://test.mystaticdomain.com/js/vue-2.5.17.js"></script>
+    <script type="text/javascript" src="https://test.mystaticdomain.com/js/jquery.min.js"></script>
     
     <script>     
 	    $(function() {      
 	        $("input[type='button']").bind("click", function() {    
 	            $.ajax({
 	                type : 'post',
-	                url:'http://localhost:8066/user/testMybatis',
+	                url:'/user/testMybatis',
 	                dataType : 'text',
 	                data : $('#f1').serialize(),  
 	                success : function (xmlq) {

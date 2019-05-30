@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" type="text/css" href="/css/theme/default/css/jpage.css"></link>
     <link ID="skin" rel="stylesheet" type="text/css" href="/css/config.css" />
-    <script type="text/javascript" src="http://test.mystaticdomain.com/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://test.mystaticdomain.com/js/jquery.min.js"></script>
     <script language="jscript" type="text/javascript">
  	var pageIndex = 1;	  //当前页数
   	$(function(){
@@ -66,7 +66,7 @@
         $.ajax({
             type: "get",//使用get方法访问后台
             dataType: "json",//返回json格式的数据
-            url: "http://localhost:8066/workflow/leave/findTasks",//要访问的后台地址
+            url: "/workflow/leave/findTasks",//要访问的后台地址
 		    async: false,
             data: "currentpage=" + pageIndex+"&pagesize="+pageSize,//要发送的数据
 		    cache:false,
