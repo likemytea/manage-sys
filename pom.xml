@@ -125,7 +125,12 @@
 					<artifactId>commons-logging</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>        
+		</dependency>
+        <!-- 添加spring security cas支持 -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-cas</artifactId>
+        </dependency>        
 	</dependencies>
     <dependencyManagement>
         <dependencies>
